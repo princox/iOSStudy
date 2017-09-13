@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTrackerStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9j3-Fa-uhO">
+                                <rect key="frame" x="16" y="20" width="343" height="96.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음식 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QV2-qQ-TyK">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="음식 이름을 입력하세요." textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AQW-TT-fZk">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-km-ikw">
+                                        <rect key="frame" x="0.0" y="66.5" width="138" height="30"/>
+                                        <state key="normal" title="기본 텍스트로 설정하기"/>
+                                        <connections>
+                                            <action selector="setDefaultButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ft7-uV-B9t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8sA-km-ikw" secondAttribute="bottom" id="8ay-Im-cTS"/>
+                                    <constraint firstAttribute="trailing" secondItem="AQW-TT-fZk" secondAttribute="trailing" id="RbC-pu-Ihe"/>
+                                    <constraint firstItem="QV2-qQ-TyK" firstAttribute="top" secondItem="9j3-Fa-uhO" secondAttribute="top" id="Rgx-4R-WFb"/>
+                                    <constraint firstItem="QV2-qQ-TyK" firstAttribute="leading" secondItem="9j3-Fa-uhO" secondAttribute="leading" id="hSV-2l-5lp"/>
+                                    <constraint firstItem="AQW-TT-fZk" firstAttribute="leading" secondItem="9j3-Fa-uhO" secondAttribute="leading" id="qqT-nG-vhW"/>
+                                    <constraint firstItem="8sA-km-ikw" firstAttribute="leading" secondItem="9j3-Fa-uhO" secondAttribute="leading" id="tdo-3U-PaT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9j3-Fa-uhO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0gh-sx-QEC"/>
+                            <constraint firstItem="9j3-Fa-uhO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Fvu-2c-ZdB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9j3-Fa-uhO" secondAttribute="trailing" id="mcz-Tx-EcF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mealLabel" destination="QV2-qQ-TyK" id="fj7-du-SKB"/>
+                        <outlet property="mealTextField" destination="AQW-TT-fZk" id="744-3e-slS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
