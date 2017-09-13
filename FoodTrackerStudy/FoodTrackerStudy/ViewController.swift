@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var mealLabel: UILabel!
     @IBOutlet weak var mealTextField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
     
     let defaultText = "음식 이름"
     

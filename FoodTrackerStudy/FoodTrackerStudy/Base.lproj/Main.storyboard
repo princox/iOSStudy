@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,22 +55,40 @@
                                     <constraint firstItem="8sA-km-ikw" firstAttribute="leading" secondItem="9j3-Fa-uhO" secondAttribute="leading" id="tdo-3U-PaT"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="teF-Ld-hkd">
+                                <rect key="frame" x="16" y="116.5" width="343" height="343"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="teF-Ld-hkd" secondAttribute="height" multiplier="1:1" id="m47-lu-pYU"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EqF-uq-Pu3" appends="YES" id="xa5-F6-0EI"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9j3-Fa-uhO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0gh-sx-QEC"/>
                             <constraint firstItem="9j3-Fa-uhO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Fvu-2c-ZdB"/>
+                            <constraint firstItem="teF-Ld-hkd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VBu-jO-0Lb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9j3-Fa-uhO" secondAttribute="trailing" id="mcz-Tx-EcF"/>
+                            <constraint firstItem="teF-Ld-hkd" firstAttribute="top" secondItem="9j3-Fa-uhO" secondAttribute="bottom" id="vRZ-DW-KLR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="teF-Ld-hkd" secondAttribute="trailing" id="zqx-Si-m5r"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="teF-Ld-hkd" id="dUC-Vw-imZ"/>
                         <outlet property="mealLabel" destination="QV2-qQ-TyK" id="fj7-du-SKB"/>
                         <outlet property="mealTextField" destination="AQW-TT-fZk" id="744-3e-slS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EqF-uq-Pu3"/>
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultImage" width="320" height="320"/>
+    </resources>
 </document>
