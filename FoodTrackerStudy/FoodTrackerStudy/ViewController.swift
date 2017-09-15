@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var mealLabel: UILabel!
     @IBOutlet weak var mealTextField: UITextField!
@@ -38,5 +38,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func setDefaultButton(_ sender: UIButton) {
         mealLabel.text = defaultText
     }
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        mealTextField.resignFirstResponder()
+        
+        let uiPickerController = UIImagePickerController()
+        
+        uiPickerController.delegate = self
+        
+        present(uiPickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker : UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            fatalError("No Images...")
+        }
+        
+        imageView.image = selectedImage
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 

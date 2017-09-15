@@ -55,8 +55,8 @@
                                     <constraint firstItem="8sA-km-ikw" firstAttribute="leading" secondItem="9j3-Fa-uhO" secondAttribute="leading" id="tdo-3U-PaT"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="teF-Ld-hkd">
-                                <rect key="frame" x="16" y="116.5" width="343" height="343"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="teF-Ld-hkd">
+                                <rect key="frame" x="16" y="116" width="343" height="343"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="teF-Ld-hkd" secondAttribute="height" multiplier="1:1" id="m47-lu-pYU"/>
@@ -83,7 +83,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="EqF-uq-Pu3"/>
+                <tapGestureRecognizer id="EqF-uq-Pu3">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="nsK-8B-Qrb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
