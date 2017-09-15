@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         nameTextField.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
     }
-
+    
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         
         print("!")
@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
     }
-
+    
     //@IBAction func setDefaultLabelText(_ sender: UIButton) {
     //    mealNameLabel.text = "Default Text"
     //}
