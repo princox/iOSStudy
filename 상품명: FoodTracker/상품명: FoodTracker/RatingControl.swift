@@ -29,7 +29,7 @@ import UIKit
         }
     }    //버튼의 크기와 갯수
     
-  
+    
     //MARK: Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -59,9 +59,9 @@ import UIKit
             rating = selectedRating
         }
     }
-
     
-//MARK: Private Methods
+    
+    //MARK: Private Methods
     private func setupButtons() {
         
         // Clear any existing buttons

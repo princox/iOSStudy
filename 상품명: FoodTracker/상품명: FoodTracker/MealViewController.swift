@@ -11,32 +11,34 @@ import os.log
 
 
 class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    @IBOutlet weak var saveButton: UIBarButtonItem!
     
-//MARK: Properties
+    
+    //MARK: Properties
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
-   
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     
     var meal: Meal?
-
+    
     override func viewDidLoad() {
-    super.viewDidLoad()
+        super.viewDidLoad()
         
-     // Handle the text field’s user input through delegate callbacks.
+        // Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
-    // Set up views if editing an existing Meal.
-    if let meal = meal {
-    navigationItem.title = meal.name
-    nameTextField.text   = meal.name
-    photoImageView.image = meal.photo
-    ratingControl.rating = meal.rating
-             }
-            
-      // Enable the Save button only if the text field has a valid Meal name.
-    updateSaveButtonState()
-            }
+        // Set up views if editing an existing Meal.
+        if let meal = meal {
+            navigationItem.title = meal.name
+            nameTextField.text   = meal.name
+            photoImageView.image = meal.photo
+            ratingControl.rating = meal.rating
+        }
+        
+        // Enable the Save button only if the text field has a valid Meal name.
+        updateSaveButtonState()
+    }
     //MARK: UITextFieldDelegate
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
