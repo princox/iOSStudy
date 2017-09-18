@@ -77,7 +77,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         present(imagePickerController, animated: true, completion: nil)
     }
     
-    func myFunc{
+    func myFunc(){
         
     }
     
