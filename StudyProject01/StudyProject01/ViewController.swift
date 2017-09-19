@@ -78,7 +78,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func myFunc(){
-        
+        //print("Nice!")
     }
     
     //@IBAction func setDefaultLabelText(_ sender: UIButton) {
