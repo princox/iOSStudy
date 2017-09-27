@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MyMemory
+//  Mymemory
 //
-//  Created by 박수연 on 2017. 9. 28..
+//  Created by 박수연 on 2017. 9. 25..
 //  Copyright © 2017년 박수연. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var memolist = [MemoData]()
+    var memolist = [MemoData]() //메모데이터를 저장할 배열 변수
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "MyMemory")
+        let container = NSPersistentContainer(name: "Mymemory")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

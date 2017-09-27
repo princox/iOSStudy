@@ -1,8 +1,8 @@
 //
 //  MemoCell.swift
-//  MyMemory
+//  Mymemory
 //
-//  Created by 박수연 on 2017. 9. 28..
+//  Created by 박수연 on 2017. 9. 27..
 //  Copyright © 2017년 박수연. All rights reserved.
 //
 

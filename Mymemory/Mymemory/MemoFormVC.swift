@@ -1,15 +1,33 @@
 //
 //  MemoFormVC.swift
-//  Mymemory
+//  MyMemory
 //
-//  Created by 박수연 on 2017. 9. 27..
+//  Created by 박수연 on 2017. 9. 28..
 //  Copyright © 2017년 박수연. All rights reserved.
 //
 
 import UIKit
 
-class MemoFormVC: UIViewController {
-
+class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    var subject: String!
+    
+    @IBOutlet var contents: UITextView!
+    @IBOutlet var preview: UIImageView!
+    
+    
+    @IBAction func save(_ sender: Any) {
+    }
+    
+    @IBAction func pick(_ sender: Any) {
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        self.present(picker, animated: false)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
