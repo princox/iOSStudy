@@ -1,2 +1,2 @@
 # iOSStudy
-study
+sooyoun study
