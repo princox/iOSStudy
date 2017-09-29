@@ -15,6 +15,7 @@
 		DE2829001F70DCD700DCCA28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2828FE1F70DCD700DCCA28 /* LaunchScreen.storyboard */; };
 		DE28290B1F70DCD700DCCA28 /* BabyDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE28290A1F70DCD700DCCA28 /* BabyDiaryTests.swift */; };
 		DE2829161F70DCD700DCCA28 /* BabyDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2829151F70DCD700DCCA28 /* BabyDiaryUITests.swift */; };
+		DE4D77EB1F7DE9E30050DD94 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE4D77EA1F7DE9E30050DD94 /* test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DE2829111F70DCD700DCCA28 /* BabyDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2829151F70DCD700DCCA28 /* BabyDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDiaryUITests.swift; sourceTree = "<group>"; };
 		DE2829171F70DCD700DCCA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE4D77EA1F7DE9E30050DD94 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DE2828FE1F70DCD700DCCA28 /* LaunchScreen.storyboard */,
 				DE2829011F70DCD700DCCA28 /* Info.plist */,
 				DE2828F91F70DCD700DCCA28 /* BabyDiary.xcdatamodeld */,
+				DE4D77EA1F7DE9E30050DD94 /* test.txt */,
 			);
 			path = BabyDiary;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				DE2829001F70DCD700DCCA28 /* LaunchScreen.storyboard in Resources */,
 				DE2828FD1F70DCD700DCCA28 /* Assets.xcassets in Resources */,
+				DE4D77EB1F7DE9E30050DD94 /* test.txt in Resources */,
 				DE2828F81F70DCD700DCCA28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +513,7 @@
 				DE28291C1F70DCD700DCCA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE28291D1F70DCD700DCCA28 /* Build configuration list for PBXNativeTarget "BabyDiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				DE28291F1F70DCD700DCCA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE2829201F70DCD700DCCA28 /* Build configuration list for PBXNativeTarget "BabyDiaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				DE2829221F70DCD700DCCA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
