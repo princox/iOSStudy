@@ -79,12 +79,17 @@ for row in a..<b{
 */
 
 
+/*
+//for 반복문
+for <루프 상수> in <순회대상> {
+    <실행할 구문>
+}
 
 
-
-
-
-
+for row in 1...5{
+    print(row)
+}
+*/
 
 
 
