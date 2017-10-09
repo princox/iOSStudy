@@ -176,7 +176,7 @@
         <!--상세화면-->
         <scene sceneID="ObZ-ML-M2h">
             <objects>
-                <viewController storyboardIdentifier="MemeRead" title="상세화면" id="3W1-1Z-76S" customClass="MemoReadVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" title="상세화면" id="3W1-1Z-76S" customClass="MemoReadVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UIS-Qv-ko5"/>
                         <viewControllerLayoutGuide type="bottom" id="Qvw-4e-uo1"/>
@@ -203,7 +203,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="n8q-q4-O8b"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -222,9 +222,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="379-Hc-JsX"/>
                     <connections>
-                        <outlet property="contentLabel" destination="GHI-Vt-NUH" id="HOl-QT-b9l"/>
-                        <outlet property="imgView" destination="jlG-Sf-vBL" id="WPf-Su-Wxz"/>
-                        <outlet property="titleLabel" destination="3Rr-DE-pTb" id="O1h-WL-UJD"/>
+                        <outlet property="contents" destination="GHI-Vt-NUH" id="c2i-00-Lfv"/>
+                        <outlet property="img" destination="jlG-Sf-vBL" id="AAs-jI-5Uf"/>
+                        <outlet property="subject" destination="3Rr-DE-pTb" id="ple-rc-M5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR8-Ni-u5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
