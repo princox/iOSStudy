@@ -130,6 +130,12 @@
                                         <constraint firstItem="k6f-r2-dJW" firstAttribute="top" secondItem="BIA-1K-MFj" secondAttribute="bottom" constant="5" id="vIP-0m-BeT"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="k6f-r2-dJW" id="r8m-UT-VGB"/>
+                                    <outlet property="img" destination="Xao-ND-AKw" id="4U9-Or-zfH"/>
+                                    <outlet property="regdate" destination="Lbj-nN-tCy" id="jWF-WR-ype"/>
+                                    <outlet property="subject" destination="BIA-1K-MFj" id="5xA-4Z-7Bg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
