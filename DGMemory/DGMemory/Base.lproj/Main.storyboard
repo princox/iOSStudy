@@ -16,13 +16,20 @@
         <scene sceneID="e1s-jN-hVe">
             <objects>
                 <tableViewController id="lUz-0k-0iF" customClass="MemoListVC" customModule="DGMemory" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ccg-bU-YS4">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ccg-bU-YS4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="9hj-2c-Sdk">
                             <rect key="frame" x="0.0" y="188" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-IV-4jW" customClass="CSLogButton" customModule="DGMemory" customModuleProvider="target">
+                                    <rect key="frame" x="84" y="6" width="207" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="더보기" backgroundImage="buttonBg.png"/>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
@@ -73,6 +80,11 @@
                                         <constraint firstItem="Il0-N9-aVU" firstAttribute="top" secondItem="fNq-xU-4hX" secondAttribute="top" constant="10" id="yZx-KX-NlE"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="jZy-V9-S99" id="ETL-Co-GZi"/>
+                                    <outlet property="regdate" destination="Il0-N9-aVU" id="vHi-eP-Kws"/>
+                                    <outlet property="subject" destination="hox-OG-Mhy" id="RNP-iR-QHo"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="caC-bU-04g" customClass="MemoCell" customModule="DGMemory" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -219,7 +231,7 @@
         <!--Memo Read View-->
         <scene sceneID="ngc-ri-YSt">
             <objects>
-                <viewController id="8al-9g-Dwn" customClass="MemoReadView" customModule="DGMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" id="8al-9g-Dwn" customClass="MemoReadView" customModule="DGMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qcu-VX-4uA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,6 +272,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bs0-dl-ncK"/>
                     </view>
+                    <connections>
+                        <outlet property="contents" destination="gdW-DL-Rk4" id="lFy-w9-TU6"/>
+                        <outlet property="img" destination="NV9-VI-VHO" id="oe6-Mh-isR"/>
+                        <outlet property="subject" destination="5i7-bR-pCX" id="ckI-e3-IVz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4mv-fw-jfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -284,4 +301,7 @@
             <point key="canvasLocation" x="-169" y="43"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="buttonBg.png" width="160" height="32"/>
+    </resources>
 </document>

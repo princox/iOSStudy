@@ -66,7 +66,16 @@ class MemoListVC: UITableViewController {
         return cell
     }
  
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = self.appDelegate.memolist[indexPath.row]
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MemoRead") as? MemoReadView else{
+            return
+        }
+        
+        vc.param = row
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

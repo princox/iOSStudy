@@ -17,6 +17,7 @@
 		DE4D78511F7E18FE0050DD94 /* MemoReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D78501F7E18FE0050DD94 /* MemoReadView.swift */; };
 		DE4D78531F7E19BB0050DD94 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D78521F7E19BB0050DD94 /* MemoCell.swift */; };
 		DE4D78551F7E19E90050DD94 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D78541F7E19E90050DD94 /* MemoData.swift */; };
+		DE58C3351F90FBFE0069B168 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58C3341F90FBFE0069B168 /* CSLogButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,11 @@
 		DE4D78501F7E18FE0050DD94 /* MemoReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadView.swift; sourceTree = "<group>"; };
 		DE4D78521F7E19BB0050DD94 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		DE4D78541F7E19E90050DD94 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		DE58C3341F90FBFE0069B168 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
+		DE58C33C1F910FAB0069B168 /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fountainpen@2x.png"; path = "../../../Desktop/PracticeImage 2/MyMemory/Chapter01/fountainpen@2x.png"; sourceTree = "<group>"; };
+		DE58C33E1F9111560069B168 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "memo-background@2x.png"; path = "../../../Desktop/PracticeImage 2/MyMemory/Chapter03/memo-background@2x.png"; sourceTree = "<group>"; };
+		DE58C33F1F91115B0069B168 /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "warning-icon-60@2x.png"; path = "../../../Desktop/PracticeImage 2/MyMemory/Chapter03/warning-icon-60@2x.png"; sourceTree = "<group>"; };
+		DE58C3421F9116380069B168 /* buttonBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonBg.png; path = "../../../Desktop/PracticeImage 2/MyMemory/Chapter03/buttonBg.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,7 @@
 		DE4D78291F7E0D040050DD94 = {
 			isa = PBXGroup;
 			children = (
+				DE58C33B1F910F860069B168 /* Resources */,
 				DE4D78341F7E0D040050DD94 /* DGMemory */,
 				DE4D78331F7E0D040050DD94 /* Products */,
 			);
@@ -67,6 +74,7 @@
 				DE4D78521F7E19BB0050DD94 /* MemoCell.swift */,
 				DE4D78351F7E0D040050DD94 /* AppDelegate.swift */,
 				DE4D78391F7E0D040050DD94 /* Main.storyboard */,
+				DE58C3341F90FBFE0069B168 /* CSLogButton.swift */,
 				DE4D78541F7E19E90050DD94 /* MemoData.swift */,
 				DE4D784A1F7E18900050DD94 /* MemoListVC.swift */,
 				DE4D784E1F7E18E70050DD94 /* MemoFormVC.swift */,
@@ -77,6 +85,17 @@
 				DE4D783C1F7E0D040050DD94 /* DGMemory.xcdatamodeld */,
 			);
 			path = DGMemory;
+			sourceTree = "<group>";
+		};
+		DE58C33B1F910F860069B168 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE58C33C1F910FAB0069B168 /* fountainpen@2x.png */,
+				DE58C33F1F91115B0069B168 /* warning-icon-60@2x.png */,
+				DE58C3421F9116380069B168 /* buttonBg.png */,
+				DE58C33E1F9111560069B168 /* memo-background@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE58C3351F90FBFE0069B168 /* CSLogButton.swift in Sources */,
 				DE4D784B1F7E18900050DD94 /* MemoListVC.swift in Sources */,
 				DE4D784F1F7E18E70050DD94 /* MemoFormVC.swift in Sources */,
 				DE4D78511F7E18FE0050DD94 /* MemoReadView.swift in Sources */,
@@ -293,7 +313,7 @@
 		DE4D78481F7E0D040050DD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DGMemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -307,7 +327,7 @@
 		DE4D78491F7E0D040050DD94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DGMemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
