@@ -166,7 +166,7 @@
         <!--Title-->
         <scene sceneID="T9g-ky-s3Z">
             <objects>
-                <viewController id="Y9r-jE-piu" customClass="MemoReadVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" id="Y9r-jE-piu" customClass="MemoReadVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgE-Cx-wbv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,6 +210,11 @@
                         <viewLayoutGuide key="safeArea" id="HR7-q9-clD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="In9-hG-Pg9"/>
+                    <connections>
+                        <outlet property="contents" destination="sFz-tL-ujD" id="Byd-yA-nrm"/>
+                        <outlet property="img" destination="KPo-ny-tz2" id="TSA-aZ-jZs"/>
+                        <outlet property="subject" destination="vyO-mR-vai" id="B5d-1z-vfD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLb-Wi-FBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

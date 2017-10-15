@@ -32,6 +32,7 @@
 		080BC4301F7C10A60024586A /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		080BC4321F7C11880024586A /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		080BC4341F7C11CF0024586A /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		083485001F931156002F028F /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fountainpen@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		080BC40B1F7C08AC0024586A = {
 			isa = PBXGroup;
 			children = (
+				083484FF1F9310FB002F028F /* New Group */,
 				080BC4161F7C08AC0024586A /* MyMemory */,
 				080BC4151F7C08AC0024586A /* Products */,
 			);
@@ -77,6 +79,14 @@
 				080BC4341F7C11CF0024586A /* MemoData.swift */,
 			);
 			path = MyMemory;
+			sourceTree = "<group>";
+		};
+		083484FF1F9310FB002F028F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				083485001F931156002F028F /* fountainpen@2x.png */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

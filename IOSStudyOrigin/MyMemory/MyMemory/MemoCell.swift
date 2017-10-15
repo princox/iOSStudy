@@ -23,15 +23,29 @@ class MemoCell: UITableViewCell {
         }
         //테이블 행의 개수
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            let row = self.appDelegate.memolist[indexPath.row]
-           
-            let cellId = row.image == nil ? "memoCell" : "memoCellWithImage"
-            let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MemoCell
-            
+           let count = self.appDelegate.memolist.count
+            return count
         }
         //행을 구성
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            <#code#>
+            let row = self.appDelegate.memolist[indexPath.row]
+            
+            let cellId = row.image == nil ? "memoCell" : "memoCellWithImage"
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MemoCell
+         
+            //4.memoCell 내용 구성
+            cell.subject?.text = row.title
+            cell.contents?.text = row.contents
+            cell.img?.image = row.image
+            
+            
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd HH:ss"
+            
+            cell.regdate?.text = formatter.string(from: row.regdate!)
+            
+            return cell
+            
         }
         //태이블의 특정행이 실행됬을때 호출되는 메소드
         override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
