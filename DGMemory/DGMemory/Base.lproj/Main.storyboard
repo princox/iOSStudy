@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -27,7 +27,14 @@
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-IV-4jW" customClass="CSLogButton" customModule="DGMemory" customModuleProvider="target">
                                     <rect key="frame" x="84" y="6" width="207" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="더보기" backgroundImage="buttonBg.png"/>
+                                    <state key="normal" title="더보기"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8Q-Ls-4Qn" customClass="CSLogButton" customModule="DGMemory" customModuleProvider="target">
+                                    <rect key="frame" x="18" y="8" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.67835611100000004" green="0.6784747243" blue="0.67834860090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,7 +175,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUT-9h-41R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="42.728635682158924"/>
+            <point key="canvasLocation" x="567" y="43"/>
         </scene>
         <!--메모 작성-->
         <scene sceneID="YaJ-xB-z5M">
@@ -226,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbo-6W-Gew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="47.226386806596707"/>
+            <point key="canvasLocation" x="1298" y="43"/>
         </scene>
         <!--Memo Read View-->
         <scene sceneID="ngc-ri-YSt">
@@ -280,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4mv-fw-jfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="811"/>
+            <point key="canvasLocation" x="1297" y="814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="shk-Yd-dKT">
@@ -301,7 +308,4 @@
             <point key="canvasLocation" x="-169" y="43"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="buttonBg.png" width="160" height="32"/>
-    </resources>
 </document>

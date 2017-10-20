@@ -16,7 +16,7 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         super.viewDidLoad()
         self.contents.delegate = self
         
-        let bgImage = UIImage(named: "memo-background.png")!
+        let bgImage = UIImage(named: "memo-background")!
         self.view.backgroundColor = UIColor(patternImage: bgImage)
         
         self.contents.layer.borderWidth = 0
@@ -86,6 +86,7 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         let length = ((contents.length > 15) ? 15 : contents.length)
         self.subject = contents.substring(with: NSRange(location: 0, length: length))
         
+        //print(length)
         self.navigationItem.title = subject
     }
     
@@ -96,6 +97,8 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         UIView.animate(withDuration: ts){
             bar?.alpha = (bar?.alpha == 0 ? 1 : 0)
         }
+        
+        print("11")
     }
     /*
     // MARK: - Navigation

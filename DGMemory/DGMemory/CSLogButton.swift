@@ -20,11 +20,29 @@ public class CSLogButton: UIButton{
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        self.setBackgroundImage(UIImage(named: "buttonBg.png"), for: .normal)
+        self.setBackgroundImage(UIImage(named: "buttonBg"), for: .normal)
+        self.tintColor = UIColor.green
+        self.setTitleColor(UIColor.red, for: .normal)
+        
+        self.addTarget(self, action: #selector(logging(_:)), for: .touchUpInside)
+ 
+        //self.init()
+    }
+    
+    /*
+    public convenience init() {
+        
+        //let a = "buttonBg.png"
+        
+        //self.setBackgroundImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControlState#>)
+        //let a = UIImage(named: "buttonBg.png")
+        self.setBackgroundImage(UIImage(named: "buttonBg"), for: .normal)
+        //self.setBackgroundImage(a, for: .normal)
         self.tintColor = UIColor.red
         
         self.addTarget(self, action: #selector(logging(_:)), for: .touchUpInside)
     }
+     */
     
     @objc func logging(_ sender: UIButton){
         switch self.logType {
